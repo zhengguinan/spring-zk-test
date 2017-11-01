@@ -22,8 +22,11 @@ import org.springframework.stereotype.Component;
 public class UserWatcher implements Watcher {
 	@Resource
 	private RegisterBean registerBean;
+
 	private ZooKeeper zk_client;
+
 	private String[] paths;
+
 	private Logger logger = LoggerFactory.getLogger(UserWatcher.class);
 
 	public void init(ZooKeeper zk_client, String... paths) {

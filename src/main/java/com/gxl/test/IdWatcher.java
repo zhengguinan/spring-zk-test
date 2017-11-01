@@ -20,10 +20,14 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class IdWatcher implements Watcher {
+
 	@Resource
 	private RegisterBean registerBean;
+
 	private ZooKeeper zk_client;
+
 	private String[] paths;
+
 	private Logger logger = LoggerFactory.getLogger(IdWatcher.class);
 
 	public void init(ZooKeeper zk_client, String... paths) {

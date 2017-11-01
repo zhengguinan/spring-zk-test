@@ -2,16 +2,24 @@ package com.gxl.test;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-//@RunWith(SpringJUnit4ClassRunner.class)
-//@ContextConfiguration(locations = "classpath*:root-context.xml")
+import javax.annotation.Resource;
+
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(locations = "classpath*:root-context.xml")
 public class Main {
-	// @Resource
-	// private UserinfoBean userinfoBean;
+
+	@Resource
+	 private UserinfoBean userinfoBean;
+
+
 	private Logger logger = LoggerFactory.getLogger(Main.class);
 
 	static ApplicationContext aContext;

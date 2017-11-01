@@ -13,8 +13,10 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class RegisterUserNode implements RegisterNode {
+
 	@Resource
 	private UserWatcher userWatcher;
+
 	@Resource
 	private RegisterBean registerBean;
 

@@ -6,6 +6,7 @@ package com.gxl.test;
  * @author JohnGao
  */
 public class IdinfoBean {
+
 	private String id;
 
 	public String getId() {

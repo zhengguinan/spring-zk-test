@@ -19,7 +19,9 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class RegisterBean implements ApplicationContextAware {
+
 	public ApplicationContext aContext;
+
 	private Logger logger = LoggerFactory.getLogger(RegisterBean.class);
 
 	@Override

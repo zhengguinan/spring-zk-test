@@ -15,17 +15,26 @@ import org.slf4j.LoggerFactory;
  * @author JohnGao
  */
 public class ConnectionZk {
+
+	private ZooKeeper zk_client;
+
 	@Resource(name = "registerUserNode")
 	private RegisterNode registerUserNode;
+
 	@Resource(name = "registerIdNode")
 	private RegisterNode registerIdNode;
+
 	private String zk_address;
 	private int session_timeout;
-	public ZooKeeper zk_client;
+
 	private String usernamePath;
+
 	private String passwordPath;
+
 	private String id;
+
 	private CountDownLatch countDownLatch;
+
 	private Logger logger = LoggerFactory.getLogger(ConnectionZk.class);
 
 	private ConnectionZk(String zk_address, int session_timeout,

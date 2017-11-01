@@ -21,7 +21,7 @@
 		<aspectjweaver-version>1.8.5</aspectjweaver-version>
 		<servlet-api-version>2.5</servlet-api-version>
 		<fastjson-version>1.2.5</fastjson-version>
-		<junit-version>4.7</junit-version>
+		<junit-version>RELEASE</junit-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
@@ -99,12 +99,6 @@
 			<artifactId>commons-pool</artifactId>
 			<version>${commons-pool.version}</version>
 		</dependency>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>${junit-version}</version>
-			<scope>test</scope>
-		</dependency>
 		<!-- Logging -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -151,6 +145,11 @@
 			<groupId>org.apache.hadoop</groupId>
 			<artifactId>zookeeper</artifactId>
 			<version>3.3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>RELEASE</version>
 		</dependency>
 	</dependencies>
 </project>
